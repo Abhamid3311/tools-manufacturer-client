@@ -3,7 +3,10 @@ import useTools from '../../../hooks/useTools';
 import Tool from './Tool';
 
 const Tools = () => {
-    const [tools, setTools] = useTools();
+    const [tools] = useTools();
+    const handleBuyNow = id => {
+        console.log("btn clicked", id);
+    };
 
     return (
         <div>
@@ -14,6 +17,7 @@ const Tools = () => {
                     tools.map(tool => <Tool
                         key={tool.id}
                         tool={tool}
+                        handleBuyNow={handleBuyNow}
                     ></Tool>).slice(0, 6)
                 }
 
