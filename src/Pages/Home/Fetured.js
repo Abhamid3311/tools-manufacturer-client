@@ -3,7 +3,7 @@ import bgEx from '../../imges/banner-1.jpg';
 
 const Fetured = () => {
     return (
-        <div className='my-8' style={{
+        <section className='my-8' style={{
             background: `url(${bgEx})`
         }}>
             <div class="hero min-h-screen" >
@@ -17,7 +17,7 @@ const Fetured = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 
