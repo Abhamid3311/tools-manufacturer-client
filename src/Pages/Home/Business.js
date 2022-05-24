@@ -2,10 +2,10 @@ import React from 'react';
 
 const Business = () => {
     return (
-        <div className='text-center my-12'>
+        <section className='text-center my-12'>
             <h2 className='text-accent text-4xl text-center font-bold my-12'>Our Business Graph</h2>
-            <div class="stats shadow-lg m-12 text-3xl">
-                <div class="stat place-items-center mr-5">
+            <div class="stats shadow-lg  m-8 text-3xl">
+                <div class="stat place-items-center mr-5 ">
                     <div class="stat-title">New Sales</div>
                     <div class="stat-value">331K</div>
                     <div class="stat-desc">From January 1st to May 1st</div>
@@ -24,7 +24,7 @@ const Business = () => {
                 </div>
 
             </div>
-        </div>
+        </section>
     );
 };
 

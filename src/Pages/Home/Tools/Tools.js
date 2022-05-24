@@ -9,7 +9,7 @@ const Tools = () => {
     };
 
     return (
-        <div>
+        <section>
             <h2 className='text-accent text-4xl text-center font-bold my-5'>Featured Tools</h2>
 
             <div className='grid grid-cols-3 gap-4'>
@@ -23,7 +23,7 @@ const Tools = () => {
 
             </div>
 
-        </div>
+        </section>
     );
 };
 

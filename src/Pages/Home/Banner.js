@@ -2,7 +2,7 @@ import React from 'react';
 
 const Banner = () => {
     return (
-        <div>
+        <section>
             <div className="carousel w-full">
                 <div id="slide1" className="carousel-item relative w-full">
                     <img src='https://i.ibb.co/gvD4zNh/banner-1.jpg' className="w-full h-5/6" alt='' />
@@ -30,7 +30,7 @@ const Banner = () => {
 
             </div>
 
-        </div>
+        </section>
     );
 };
 
