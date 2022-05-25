@@ -1,6 +1,6 @@
 import { async } from '@firebase/util';
 import React from 'react';
-import { useAuthState, useCreateUserWithEmailAndPassword, useSignInWithGoogle, useUpdateProfile } from 'react-firebase-hooks/auth';
+import { useAuthState, useCreateUserWithEmailAndPassword, useSendEmailVerification, useSignInWithGoogle, useUpdateProfile } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 
@@ -18,7 +18,10 @@ const SignUp = () => {
         user1,
         loading,
         error,
-    ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
+    ] = useCreateUserWithEmailAndPassword(auth);
+    const [sendEmailVerification, sending2, error2] = useSendEmailVerification(
+        auth);
+
     const [updateProfile, updating, UpdateError] = useUpdateProfile(auth);
 
 
@@ -48,7 +51,8 @@ const SignUp = () => {
         } else {
             await createUserWithEmailAndPassword(email, password);
             await updateProfile({ displayName: name });
-
+            await sendEmailVerification();
+            alert('Sent email');
         }
     };
 
