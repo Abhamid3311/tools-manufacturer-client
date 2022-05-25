@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import useTools from '../../../hooks/useTools';
 import Tool from './Tool';
 
 const Tools = () => {
     const [tools] = useTools();
+    const navigate = useNavigate();
     const handleBuyNow = id => {
-        console.log("btn clicked", id);
+        navigate(`tools/${id}`);
     };
 
     return (

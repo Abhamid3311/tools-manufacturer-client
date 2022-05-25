@@ -10,6 +10,8 @@ import SignUp from './Pages/SharedPage/Login/SignUp';
 import Login from './Pages/SharedPage/Login/Login';
 import Footer from './Pages/SharedPage/Footer/Footer';
 import ToolDetails from './Pages/Page/ToolDetails/ToolDetails';
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
 
 function App() {
   return (
@@ -20,13 +22,14 @@ function App() {
         <Route path='/tools' element={<Home></Home>}></Route>
         <Route path='/tools/:id' element={<ToolDetails></ToolDetails>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
-        <Route path='/signup' element={<SignUp></SignUp>}></Route>
+        <Route path='/register' element={<SignUp></SignUp>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/portfolio' element={<MyPortfolio></MyPortfolio>}></Route>
         <Route path='/dashboard' element={<Dashboard></Dashboard>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
+      <ToastContainer></ToastContainer>
 
     </div>
   );
