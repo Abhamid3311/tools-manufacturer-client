@@ -10,9 +10,9 @@ const Tool = ({ tool, handleBuyNow }) => {
                     <h2 className="card-title">{name}</h2>
                     <h3 className="card-title">Made By : {made}</h3>
                     <h5 className="card-title">Model No. : {model}</h5>
-                    <p> <strong>Min-Order Quantity : {mOrder}</strong> </p>
-                    <p>Available Quantity : {quantity}</p>
-                    <h4 className='text-red-600'>Price: {price} BDT</h4>
+                    <p> <strong>Minimum Order : {mOrder}</strong> </p>
+                    <p>Available : {quantity}</p>
+                    <h4 className='text-red-600'>Price: {price} per/pec</h4>
                     <div className="card-actions justify-end">
                         <button onClick={() => handleBuyNow(id)} className="btn btn-accent text-white w-full">Buy Now</button>
                     </div>
