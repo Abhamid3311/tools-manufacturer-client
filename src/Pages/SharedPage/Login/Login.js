@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
-
 import { async } from '@firebase/util';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
 import auth from '../../../firebase.init';
 
 
@@ -37,7 +35,7 @@ const Login = () => {
 
     if (user || user1) {
         console.log(user, user1);
-        navigate('/appointment');
+        navigate('/');
     };
     //erroe message
     let errorElement;

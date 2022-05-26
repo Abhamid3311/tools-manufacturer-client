@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Tool = ({ tool, handleBuyNow }) => {
-    const { id, name, model, made, price, quantity, mOrder, img } = tool;
+    const { _id, name, model, made, price, quantity, mOrder, img } = tool;
     return (
         <div>
             <div className="card w-90 bg-base-100 shadow-xl">
@@ -14,7 +14,7 @@ const Tool = ({ tool, handleBuyNow }) => {
                     <p>Available : {quantity}</p>
                     <h4 className='text-red-600'>Price: {price} per/pec</h4>
                     <div className="card-actions justify-end">
-                        <button onClick={() => handleBuyNow(id)} className="btn btn-accent text-white w-full">Buy Now</button>
+                        <button onClick={() => handleBuyNow(_id)} className="btn btn-accent text-white w-full">Buy Now</button>
                     </div>
                 </div>
             </div>

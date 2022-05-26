@@ -7,7 +7,7 @@ const Tools = () => {
     const [tools] = useTools();
     const navigate = useNavigate();
     const handleBuyNow = id => {
-        navigate(`tools/${id}`);
+        navigate(`/tools/${id}`);
     };
 
     return (
@@ -17,7 +17,7 @@ const Tools = () => {
             <div className='grid grid-cols-1 lg:grid-cols-3 gap-4'>
                 {
                     tools.map(tool => <Tool
-                        key={tool.id}
+                        key={tool._id}
                         tool={tool}
                         handleBuyNow={handleBuyNow}
                     ></Tool>).slice(0, 6)

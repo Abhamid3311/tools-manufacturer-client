@@ -1,6 +1,5 @@
 [
     {
-        "id": 101,
         "name": "Michel Smith",
         "comment": "One of My favourit Institution.They are doing  awesome work. I love There services. Carry One!",
         "img": "https://i.pinimg.com/originals/a1/2f/fd/a12ffdab3b3318bee3e7caa0dc95341f.jpg",
@@ -8,7 +7,6 @@
         "ratings": 5
     },
     {
-        "id": 102,
         "name": "Taylor Swift",
         "comment": "One of My favourit Party.They are doing  awesome work. I love There services. keep it up!",
         "img": "https://121clicks.com/wp-content/uploads/2020/04/liliia_beda_fine_art_photography_10.jpg",
@@ -16,7 +14,6 @@
         "ratings": 4.9
     },
     {
-        "id": 103,
         "name": "Bob Rock",
         "comment": "One of My favourit Institution.They are doing  awesome work. I love There services. Love it!",
         "img": "https://thumbs.dreamstime.com/b/smiling-male-worker-headset-posing-picture-call-center-agent-wearing-looking-camera-near-laptop-workplace-happy-personal-120429091.jpg",
