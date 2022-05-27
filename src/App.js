@@ -13,6 +13,9 @@ import ToolDetails from './Pages/Page/ToolDetails/ToolDetails';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from 'react-toastify';
 import RequireAuth from './Pages/SharedPage/RequireAuth';
+import MyOrder from './Pages/Page/Dashboard/MyOrder';
+import AddReview from './Pages/Page/Dashboard/AddReview';
+import MyProfile from './Pages/Page/Dashboard/MyProfile';
 
 function App() {
   return (
@@ -21,9 +24,10 @@ function App() {
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/tools' element={<Home></Home>}></Route>
-        <Route path='/tools/:id' element={<RequireAuth>
-          <ToolDetails></ToolDetails>
-        </RequireAuth>}>
+        <Route path='/tools/:id' element={
+          <RequireAuth>
+            <ToolDetails></ToolDetails>
+          </RequireAuth>}>
         </Route>
 
         <Route path='/login' element={<Login></Login>}></Route>
@@ -31,8 +35,14 @@ function App() {
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/portfolio' element={<MyPortfolio></MyPortfolio>}></Route>
 
-        <Route path='/dashboard' element={<RequireAuth>
-          <Dashboard></Dashboard></RequireAuth>}>
+        <Route path='/dashboard' element={
+          <RequireAuth>
+            <Dashboard>
+            </Dashboard>
+          </RequireAuth>}>
+          <Route index path='/dashboard' element={<MyOrder></MyOrder>}></Route>
+          <Route path='/dashboard/addReview' element={<AddReview></AddReview>}></Route>
+          <Route path='/dashboard/myProfile' element={<MyProfile></MyProfile>}></Route>
         </Route>
 
         <Route path='*' element={<NotFound></NotFound>}></Route>
