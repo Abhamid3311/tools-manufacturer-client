@@ -27,7 +27,15 @@ const Blogs = () => {
             </div>
 
             <div className='mb-10'>
-            <h2 className='text-3xl font-semibold'> </h2>
+                <h2 className='text-3xl font-semibold'> How does prototypical inheritance work? </h2>
+
+                <p> The Prototypal Inheritance is a feature in javascript used to add methods and properties in objects. It is a method by which an object can inherit the properties and methods of another object. Traditionally, in order to get and set the [[Prototype]] of an object, we use Object.getPrototypeOf and Object. When it comes to inheritance, JavaScript only has one construct: objects. Each object has a private property which holds a link to another object called its prototype. That prototype object has a prototype of its own, and so on until an object is reached with null as its prototype. By definition, null has no prototype, and acts as the final link in this prototype chain.</p>
+            </div>
+
+            <div className='mb-10'>
+                <h2 className='text-3xl font-semibold'>What is a unit test? Why should write unit tests?</h2>
+
+                <p>Unit tests are typically automated tests written and run by software developers to ensure that a section of an application (known as the "unit") meets its design and behaves as intended.[2] In procedural programming, a unit could be an entire module, but it is more commonly an individual function or procedure. During development, a software developer may code criteria, or results that are known to be good, into the test to verify the unit's correctness. During test case execution, frameworks log tests that fail any criterion and report them in a summary. For this, the most commonly used approach is test - function - expected value.</p>
             </div>
 
         </div>
