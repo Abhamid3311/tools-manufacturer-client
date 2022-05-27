@@ -10,14 +10,14 @@ const MyOrder = () => {
     const [tools] = useTools();
 
     useEffect(() => {
-        fetch(`http://localhost:5000/order/${user.email}`)
+        fetch(`http://localhost:5000/order/${user?.email}`)
             .then(res => res.json())
             .then(data => setOrders(data))
     }, [user]);
 
     return (
         <div>
-            <h2>My Order: {orders.length}</h2>
+            <h2 className='text-2xl font-semibold'>My Order: {orders.length}</h2>
 
             <table class="table w-full">
                 <thead>
@@ -42,7 +42,7 @@ const MyOrder = () => {
                             <th>{order.product}</th>
                             <th>{order.order}</th>
                             <th>{order.price}</th>
-                            <th><Link to="/tools">Pay</Link></th>
+                            <th><button className='btn btn-ghost'>Pay</button></th>
                         </tr>
                     </tbody>)
 
