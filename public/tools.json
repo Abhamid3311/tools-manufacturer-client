@@ -7,7 +7,8 @@
         "description": "",
         "price": 15000,
         "quantity": 10,
-        "mOrder": 5,
+        "minOrder": 5,
+        "myOrder": 1,
         "img": "https://i.ibb.co/XjR5wvC/BEARING-SEPARATOR.jpg"
     },
     {
@@ -17,7 +18,8 @@
         "made": "Taiwan",
         "price": 1200,
         "quantity": 12,
-        "mOrder": 5,
+        "minOrder": 5,
+        "myOrder": 1,
         "img": "https://i.ibb.co/Mpdss5J/d1573599-10fc-4d4a-a1b1-f5c60c0650fe-HTW0300101.jpg"
     },
     {
@@ -27,7 +29,8 @@
         "made": "Taiwan",
         "price": 2000,
         "quantity": 10,
-        "mOrder": 5,
+        "minOrder": 5,
+        "myOrder": 1,
         "img": "https://i.ibb.co/x3zB0xb/e3454920-cd62-4d34-be5b-6e6f02f28543-ATT1500208.jpg"
     },
     {
@@ -37,7 +40,8 @@
         "made": "China",
         "price": 1500,
         "quantity": 10,
-        "mOrder": 5,
+        "minOrder": 5,
+        "myOrder": 1,
         "img": "https://i.ibb.co/1TTCQT3/daniel-bestjumpstarterreview-com-ov-Gr-EUgrky-E-unsplash.jpg"
     },
     {
@@ -47,7 +51,8 @@
         "made": "Korea",
         "price": 10000,
         "quantity": 10,
-        "mOrder": 5,
+        "minOrder": 5,
+        "myOrder": 1,
         "img": "https://i.ibb.co/X7ZttCK/garett-mizunaka-x-Fjti9r-YILo-unsplash.jpg"
     },
     {
@@ -57,7 +62,8 @@
         "made": "Taiwan",
         "price": 1300,
         "quantity": 19,
-        "mOrder": 5,
+        "minOrder": 5,
+        "myOrder": 1,
         "img": "https://i.ibb.co/Ttz4nYQ/jose-pinto-t-Xp-T0-WORr-Q-unsplash.jpg"
     },
     {
@@ -67,7 +73,8 @@
         "made": "Taiwan",
         "price": 12000,
         "quantity": 10,
-        "mOrder": 3,
+        "minOrder": 3,
+        "myOrder": 1,
         "img": "https://i.ibb.co/HF6kHjk/jose-pinto-ye-Mp-Sq-F8-Z-8-unsplash.jpg"
     },
     {
@@ -77,7 +84,8 @@
         "made": "Taiwan",
         "price": 13000,
         "quantity": 10,
-        "mOrder": 3,
+        "minOrder": 3,
+        "myOrder": 1,
         "img": "https://i.ibb.co/qRPL15J/julian-hochgesang-1-Ps-Ou8gy-ZIQ-unsplash.jpg"
     },
     {
@@ -87,7 +95,8 @@
         "made": "Taiwan",
         "price": 25000,
         "quantity": 10,
-        "mOrder": 3,
+        "minOrder": 3,
+        "myOrder": 1,
         "img": "https://i.ibb.co/LhKZKTF/markus-spiske-6r-F-Du5cn1-Y-unsplash.jpg"
     },
     {
@@ -97,7 +106,8 @@
         "made": "China",
         "price": 10000,
         "quantity": 10,
-        "mOrder": 5,
+        "minOrder": 5,
+        "myOrder": 1,
         "img": "https://i.ibb.co/h8fTpBw/obi-pixel6propix-Irdm0-tev-Pc-unsplash.jpg"
     }
 ]
