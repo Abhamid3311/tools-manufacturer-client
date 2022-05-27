@@ -3,21 +3,31 @@ import React from 'react';
 const Business = () => {
     return (
         <section className='text-center my-12'>
-            <h2 className='text-accent text-4xl text-center font-bold my-12'>Our Business Graph</h2>
-            <div class=" shadow-lg  m-8 text-3xl grid grid-cols-1 lg:grid-cols-3">
-                <div class="stat place-items-center mr-5 ">
+            <h2 className='text-accent text-4xl text-center font-bold my-12'>Our Business Summery</h2>
+            <div class=" p-10  m-8 text-3xl grid grid-cols-1 lg:grid-cols-3">
+
+                <div class="stat place-items-center m-2 border-2 shadow-lg">
+                    <div class="stat-figure text-accent ">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-8 h-8 stroke-current "><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path></svg>
+                    </div>
                     <div class="stat-title">Sales</div>
                     <div class="stat-value text-accent">331K</div>
                     <div class="stat-desc">From January 1st to May 1st</div>
                 </div>
 
-                <div class="stat place-items-center mr-5">
-                    <div class="stat-title">New Customers</div>
+                <div class="stat place-items-center m-2 border-2 shadow-lg">
+                    <div class="stat-figure text-secondary">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-8 h-8 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                    </div>
+                    <div class="stat-title">Reviews</div>
                     <div class="stat-value text-secondary">4,200</div>
                     <div class="stat-desc ">↗︎ 40 (2%)</div>
                 </div>
 
-                <div class="stat place-items-center">
+                <div class="stat place-items-center m-2 border-2 shadow-lg">
+                    <div class="stat-figure text-red-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-8 h-8 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path></svg>
+                    </div>
                     <div class="stat-title">New Registers</div>
                     <div class="stat-value text-red-500">1,200</div>
                     <div class="stat-desc">↘︎ 90 (14%)</div>
