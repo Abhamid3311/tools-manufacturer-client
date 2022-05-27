@@ -2,13 +2,17 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
+import { toast } from 'react-toastify';
 
 
 const ToolDetails = () => {
     const [user] = useAuthState(auth);
-
     let { id } = useParams();
     const [tool, setTool] = useState({});
+    const [order, setOrder] = useState({});
+    const [address, setAddress] = useState('');
+    const [phone, setPhone] = useState('');
+
     const { name, model, made, price, quantity, minOrder, img, myOrder } = tool;
 
     useEffect(() => {
@@ -61,13 +65,39 @@ const ToolDetails = () => {
     //Total Price
     const totalPrice = myOrder * price;
 
+    const handlePurchaseForm = e => {
+        e.preventDefault();
+        const order = {
+            name: user.displayName,
+            email: user.email,
+            address: address,
+            phone: phone,
+            product: name,
+            order: myOrder,
+            price: totalPrice
+        };
+        console.log(order);
 
-
+        //send to server
+        const url = 'http://localhost:5000/order';
+        fetch(url, {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(order)
+        })
+            .then(res => res.json())
+            .then(result => {
+                toast.success('Purchase Submitted');
+                const newOrder = [...order, result];
+                setOrder(newOrder);
+            });
+    };
 
 
     return (
         <div>
-
             <div className="card w-1/2  my-10 bg-base-100 shadow-xl mx-auto ">
                 <figure><img src={img} alt="cars tool" className='h-52  object-cover' /></figure>
                 <div className="card-body mx-auto">
@@ -97,39 +127,48 @@ const ToolDetails = () => {
                             <button onClick={() => handleIncreseBtn(id)} className='btn bg-green-400 text-black'>Increse</button>
                             <button onClick={() => handleDecreseBtn(id)} className='btn bg-red-400 text-black'>Decrese</button>
                         </div>
-
                     </div>
 
 
 
                     <div class="card flex-shrink-0 w-full max-w-md shadow-2xl bg-base-100">
-                        <form class="card-body">
+                        <form class="card-body" onSubmit={handlePurchaseForm}>
                             <div class="form-control">
                                 <label class="label">
                                     <span class="label-text">Name</span>
                                 </label>
-                                <input type="text" value={user.displayName} class="input input-bordered" disabled />
+                                <input type="text" value={user?.displayName} class="input input-bordered" disabled />
                             </div>
 
                             <div class="form-control">
                                 <label class="label">
                                     <span class="label-text">Email</span>
                                 </label>
-                                <input type="email" value={user.email} disabled class="input input-bordered" />
+                                <input type="email" value={user?.email} disabled class="input input-bordered" />
                             </div>
 
                             <div class="form-control">
                                 <label class="label">
                                     <span class="label-text">Address</span>
                                 </label>
-                                <input type="text" placeholder="Address" class="input input-bordered" />
+                                <input
+                                    onChange={event => setAddress(event.target.value)}
+                                    type="text"
+                                    placeholder="Address"
+                                    class="input input-bordered"
+                                />
                             </div>
 
                             <div class="form-control">
                                 <label class="label">
                                     <span class="label-text">Phone Number</span>
                                 </label>
-                                <input type="number" placeholder="phone" class="input input-bordered" />
+                                <input
+                                    onChange={event => setPhone(event.target.value)}
+                                    type="text"
+                                    placeholder="phone"
+                                    name="phone"
+                                    class="input input-bordered" />
                             </div>
                             <div class="form-control">
                                 <label class="label">
@@ -152,8 +191,6 @@ const ToolDetails = () => {
                     </div>
                 </div>
             </div>
-
-
         </div>
     );
 };

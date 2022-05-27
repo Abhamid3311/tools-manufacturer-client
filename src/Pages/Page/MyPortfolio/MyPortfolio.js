@@ -3,7 +3,7 @@ import React from 'react';
 const MyPortfolio = () => {
     return (
         <div>
-            <h2 className='text-5xl text-center text-accent font-bold my-10'>MyPortfolio</h2>
+            <h2 className='text-5xl text-center text-accent font-bold my-10'>My Portfolio</h2>
 
             <div className='w-1/2 mx-auto'>
                 <h2 className='text-2xl mb-3'>Name: Md Abdul Hamid</h2>
@@ -38,9 +38,6 @@ const MyPortfolio = () => {
 
                         <li className='text-secondary text-xl'><a href="https://abhamid3311.github.io/College-Website-/" target="_blank" rel="noreferrer">College Website</a></li>
                     </ul>
-
-
-
                 </div>
             </div>
         </div>
