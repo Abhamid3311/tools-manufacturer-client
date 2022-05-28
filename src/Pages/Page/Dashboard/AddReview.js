@@ -10,7 +10,7 @@ const AddReview = () => {
         console.log(data);
 
         //send to server
-        const url = 'http://localhost:5000/review';
+        const url = 'https://lit-retreat-00129.herokuapp.com/review';
         fetch(url, {
             method: 'POST',
             headers: {

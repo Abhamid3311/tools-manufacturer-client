@@ -16,7 +16,7 @@ const ToolDetails = () => {
     const { name, model, made, price, quantity, minOrder, img, myOrder } = tool;
 
     useEffect(() => {
-        const url = `http://localhost:5000/tools/${id}`;
+        const url = `https://lit-retreat-00129.herokuapp.com/tools/${id}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setTool(data));
@@ -28,7 +28,7 @@ const ToolDetails = () => {
         setTool(updateTool);
 
         //send to Server
-        const url = `http://localhost:5000/tools/${id}`;
+        const url = `https://lit-retreat-00129.herokuapp.com/tools/${id}`;
         fetch(url, {
             method: 'PUT',
             headers: {
@@ -48,7 +48,7 @@ const ToolDetails = () => {
         setTool(updateTool);
 
         //send to Server
-        const url = `http://localhost:5000/tools/${id}`;
+        const url = `https://lit-retreat-00129.herokuapp.com/tools/${id}`;
         fetch(url, {
             method: 'PUT',
             headers: {
@@ -79,7 +79,7 @@ const ToolDetails = () => {
         console.log(order);
 
         //send to server
-        const url = 'http://localhost:5000/order';
+        const url = 'https://lit-retreat-00129.herokuapp.com/order';
         fetch(url, {
             method: 'POST',
             headers: {
