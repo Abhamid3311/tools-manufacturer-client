@@ -33,10 +33,7 @@ const Login = () => {
         return <button className="btn btn-square loading"></button>;
     };
 
-    if (user || user1) {
-        console.log(user, user1);
-        navigate('/');
-    };
+
     //erroe message
     let errorElement;
     if (error || error1) {
