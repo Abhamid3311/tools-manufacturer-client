@@ -16,6 +16,7 @@ import RequireAuth from './Pages/SharedPage/RequireAuth';
 import MyOrder from './Pages/Page/Dashboard/MyOrder';
 import AddReview from './Pages/Page/Dashboard/AddReview';
 import MyProfile from './Pages/Page/Dashboard/MyProfile';
+import ManageAllOrder from './Pages/Page/Dashboard/ManageAllOrder';
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
           <Route index path='/dashboard' element={<MyOrder></MyOrder>}></Route>
           <Route path='/dashboard/addReview' element={<AddReview></AddReview>}></Route>
           <Route path='/dashboard/myProfile' element={<MyProfile></MyProfile>}></Route>
+          <Route path='/dashboard/manageOrder' element={<ManageAllOrder></ManageAllOrder>}></Route>
         </Route>
 
         <Route path='*' element={<NotFound></NotFound>}></Route>
