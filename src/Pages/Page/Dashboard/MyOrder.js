@@ -15,6 +15,10 @@ const MyOrder = () => {
             .then(data => setOrders(data))
     }, [user]);
 
+    const handleDeleteMyOrder = (email) => {
+      
+    }
+
     return (
         <div>
             <h2 className='text-2xl font-semibold'>My Order: {orders.length}</h2>
@@ -28,7 +32,8 @@ const MyOrder = () => {
                         <th>Product</th>
                         <th>Quantity</th>
                         <th>Price</th>
-                        <th>Payment Status</th>
+                        <th>Bill</th>
+                        <th>Order</th>
                     </tr>
                 </thead>
 
@@ -43,6 +48,7 @@ const MyOrder = () => {
                             <th>{order.order}</th>
                             <th>{order.price}</th>
                             <th><button className='btn btn-ghost'>Pay</button></th>
+                            <th><button onClick={() => handleDeleteMyOrder(user?.email)} className='btn btn-ghost'>X</button></th>
                         </tr>
                     </tbody>)
 

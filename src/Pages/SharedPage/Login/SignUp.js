@@ -52,7 +52,7 @@ const SignUp = () => {
             await createUserWithEmailAndPassword(email, password);
             await updateProfile({ displayName: name });
             await sendEmailVerification();
-            alert('Sent email');
+            toast.success('Sent email');
         }
     };
 
