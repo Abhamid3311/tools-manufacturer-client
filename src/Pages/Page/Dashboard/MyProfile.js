@@ -19,7 +19,7 @@ const MyProfile = () => {
 
 
         //send to server
-        const url = 'http://localhost:5000//user';
+        const url = 'https://lit-retreat-00129.herokuapp.com/user';
         fetch(url, {
             method: 'POST',
             headers: {
