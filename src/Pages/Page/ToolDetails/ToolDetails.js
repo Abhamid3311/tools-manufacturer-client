@@ -111,7 +111,7 @@ const ToolDetails = () => {
                 </div>
             </div>
 
-            {/* Purchase Form */}
+            {/* Enter Quantity Form */}
             <div class="hero min-h-screen mx-auto">
                 <div class="hero-content flex-col lg:flex-row-reverse">
                     <div class="text-center lg:text-left ">
@@ -124,13 +124,13 @@ const ToolDetails = () => {
                             <input type="number" value={myOrder} disabled class="input input-bordered" />
                         </div>
                         <div className='mt-5'>
-                            <button onClick={() => handleIncreseBtn(id)} className='btn bg-green-400 text-black'>Increse</button>
+                            <button onClick={() => handleIncreseBtn(id)} className='btn bg-green-400 text-black mr-2'>Increse</button>
                             <button onClick={() => handleDecreseBtn(id)} className='btn bg-red-400 text-black'>Decrese</button>
                         </div>
                     </div>
 
 
-
+                    {/* Purchase Form */}
                     <div class="card flex-shrink-0 w-full max-w-md shadow-2xl bg-base-100">
                         <form class="card-body" onSubmit={handlePurchaseForm}>
                             <div class="form-control">
@@ -156,6 +156,7 @@ const ToolDetails = () => {
                                     type="text"
                                     placeholder="Address"
                                     class="input input-bordered"
+                                    required
                                 />
                             </div>
 
@@ -168,7 +169,7 @@ const ToolDetails = () => {
                                     type="text"
                                     placeholder="phone"
                                     name="phone"
-                                    class="input input-bordered" />
+                                    class="input input-bordered" required />
                             </div>
                             <div class="form-control">
                                 <label class="label">
