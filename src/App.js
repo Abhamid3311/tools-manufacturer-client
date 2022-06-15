@@ -17,6 +17,7 @@ import MyOrder from './Pages/Page/Dashboard/MyOrder';
 import AddReview from './Pages/Page/Dashboard/AddReview';
 import MyProfile from './Pages/Page/Dashboard/MyProfile';
 import ManageAllOrder from './Pages/Page/Dashboard/ManageAllOrder';
+import Alltools from './Pages/Page/AllTools/Alltools';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       <Navbar></Navbar>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
+        <Route path='/alltools' element={<Alltools></Alltools>}></Route>
         <Route path='/tools' element={<Home></Home>}></Route>
         <Route path='/tools/:id' element={
           <RequireAuth>

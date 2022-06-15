@@ -12,7 +12,7 @@ const Tools = () => {
 
     return (
         <section>
-            <h2 className='text-accent text-4xl text-center font-bold my-5'>Featured Tools</h2>
+            <h2 className='text-accent text-4xl text-center font-bold my-10'>Featured Tools</h2>
 
             <div className='grid grid-cols-1 lg:grid-cols-3 gap-4'>
                 {

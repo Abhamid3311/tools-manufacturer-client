@@ -1,4 +1,5 @@
 import React from 'react';
+import { AiOutlineArrowRight } from 'react-icons/ai';
 
 const Tool = ({ tool, handleBuyNow }) => {
     const { _id, name, model, made, price, quantity, minOrder, img, description } = tool;
@@ -15,7 +16,9 @@ const Tool = ({ tool, handleBuyNow }) => {
                     <h4 className='text-red-600'>Price: {price} per/pec</h4>
                     <p className="card-title text-gray-400">{description}</p>
                     <div className="card-actions justify-end">
-                        <button onClick={() => handleBuyNow(_id)} className="btn btn-accent text-white w-full">Buy Now</button>
+                        <button onClick={() => handleBuyNow(_id)} className="btn btn-accent text-white w-full text-lg">
+                            <span className='mr-1'>Buy Now</span> <AiOutlineArrowRight></AiOutlineArrowRight>
+                        </button>
                     </div>
                 </div>
             </div>

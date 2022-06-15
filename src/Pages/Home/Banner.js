@@ -1,36 +1,34 @@
 import React from 'react';
+import banner from '../../imges/plus.jpg';
+import { AiOutlineArrowRight } from 'react-icons/ai';
+import { useNavigate } from 'react-router-dom';
 
 const Banner = () => {
+    const navigate = useNavigate();
+    const handleExplorer = () => {
+        navigate('/alltools')
+    }
+
+
     return (
-        <section>
-            <div className="carousel w-full">
-                <div id="slide1" className="carousel-item relative w-full">
-                    <img src='https://i.ibb.co/gvD4zNh/banner-1.jpg' className="w-full h-5/6" alt='' />
+        <div class="hero min-h-screen bg-fixed bg-center hero-overlay bg-opacity-50" style={{
+            background: `url(${banner})`
+        }} >
 
-                    /
-                    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide4" className="btn btn-circle">❮</a>
-                        <a href="#slide2" className="btn btn-circle">❯</a>
-                    </div>
+            <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-lg mb-5">
+                    <h1 class="mb-5 text-4xl font-bold text-primary">WELCOME KHULNA TOOLS</h1>
+                    <p class="mb-5 text-black text-lg">If you work on your own vehicles, do yourself a favor and check out these cool tools. It's a collection that should be in every serious mechanic's tool chest.</p>
+                    <button onClick={handleExplorer} class="btn btn-accent  text-lg">
+                        <span className='mr-1'>Let's Explore</span> <AiOutlineArrowRight></AiOutlineArrowRight>
+                    </button>
                 </div>
-                <div id="slide2" className="carousel-item relative w-full">
-                    <img src="https://i.ibb.co/YTkXp0D/banner-3.jpg" className="w-full h-5/6" alt='' /> /
-                    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide1" className="btn btn-circle">❮</a>
-                        <a href="#slide3" className="btn btn-circle">❯</a>
-                    </div>
-                </div>
-                <div id="slide3" className="carousel-item relative w-full">
-                    <img src="https://i.ibb.co/d0pRBT9/banner-4-1.jpg" className="w-full h-5/6" alt='' /> /
-                    <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide2" className="btn btn-circle">❮</a>
-                        <a href="#slide4" className="btn btn-circle">❯</a>
-                    </div>
-                </div>
-
             </div>
 
-        </section>
+        </div>
+
+
+
     );
 };
 
