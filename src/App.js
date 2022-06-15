@@ -20,6 +20,7 @@ import ManageAllOrder from './Pages/Page/Dashboard/ManageAllOrder';
 import Alltools from './Pages/Page/AllTools/Alltools';
 import About from './Pages/Page/About';
 import Contact from './Pages/Page/Contact/Contact';
+import AddTool from './Pages/Page/Dashboard/AddTool';
 
 function App() {
   return (
@@ -50,6 +51,7 @@ function App() {
           <Route path='/dashboard/addReview' element={<AddReview></AddReview>}></Route>
           <Route path='/dashboard/myProfile' element={<MyProfile></MyProfile>}></Route>
           <Route path='/dashboard/manageOrder' element={<ManageAllOrder></ManageAllOrder>}></Route>
+          <Route path='/dashboard/addTool' element={<AddTool></AddTool>}></Route>
         </Route>
 
         <Route path='*' element={<NotFound></NotFound>}></Route>
