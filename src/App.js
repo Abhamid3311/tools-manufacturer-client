@@ -21,6 +21,8 @@ import Alltools from './Pages/Page/AllTools/Alltools';
 import About from './Pages/Page/About';
 import Contact from './Pages/Page/Contact/Contact';
 import AddTool from './Pages/Page/Dashboard/AddTool';
+import ManageTools from './Pages/Page/Dashboard/ManageTools';
+import Users from './Pages/Page/Dashboard/Users';
 
 function App() {
   return (
@@ -52,6 +54,8 @@ function App() {
           <Route path='/dashboard/myProfile' element={<MyProfile></MyProfile>}></Route>
           <Route path='/dashboard/manageOrder' element={<ManageAllOrder></ManageAllOrder>}></Route>
           <Route path='/dashboard/addTool' element={<AddTool></AddTool>}></Route>
+          <Route path='/dashboard/manageTool' element={<ManageTools></ManageTools>}></Route>
+          <Route path='/dashboard/manageUser' element={<Users></Users>}></Route>
         </Route>
 
         <Route path='*' element={<NotFound></NotFound>}></Route>

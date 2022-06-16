@@ -3,10 +3,12 @@ import { useForm } from "react-hook-form";
 import useTools from '../../../hooks/useTools';
 
 const AddTool = () => {
+    const { register, handleSubmit, reset } = useForm();
     const [tools, setTools] = useTools();
-    const { register, handleSubmit } = useForm();
-    const onSubmit = data => {
-        console.log(data);
+
+
+    const onSubmit = (data, e) => {
+        e.preventDefault();
 
         //send to server
         const url = 'https://lit-retreat-00129.herokuapp.com/tools';
@@ -19,9 +21,12 @@ const AddTool = () => {
         })
             .then(res => res.json())
             .then(result => {
+                console.log(result);
                 const newTool = [...tools, result];
                 setTools(newTool);
+                reset();
             })
+
     };
     return (
         <div>
