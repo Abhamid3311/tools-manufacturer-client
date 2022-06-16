@@ -124,8 +124,18 @@ const ToolDetails = () => {
                             <input type="number" value={myOrder} disabled class="input input-bordered" />
                         </div>
                         <div className='mt-5'>
-                            <button onClick={() => handleIncreseBtn(id)} className='btn bg-green-400 text-black mr-2'>Increse</button>
-                            <button onClick={() => handleDecreseBtn(id)} className='btn bg-red-400 text-black'>Decrese</button>
+                            <button
+                                onClick={() => handleIncreseBtn(id)}
+                                className='btn bg-green-400 text-black mr-2'
+                                disabled={myOrder >= quantity ? "true" : ""}
+
+                            >Increse</button>
+                            <button
+                                onClick={() => handleDecreseBtn(id)}
+                                className='btn bg-red-400 text-black'
+                                disabled={myOrder <= minOrder ? "true" : ""}
+                            >Decrese
+                            </button>
                         </div>
                     </div>
 
