@@ -25,7 +25,7 @@ const MyProfile = () => {
             phone: data.phone
         };
         //send to server
-        const url = `http://localhost:5000/user/${user.email}`;
+        const url = `https://lit-retreat-00129.herokuapp.com/user/${user.email}`;
         fetch(url, {
             method: 'PUT',
             headers: {
@@ -44,7 +44,7 @@ const MyProfile = () => {
 
     //Get User
     useEffect(() => {
-        fetch(`http://localhost:5000/user/${user.email}`)
+        fetch(`https://lit-retreat-00129.herokuapp.com/user/${user.email}`)
             .then(res => res.json())
             .then(data => setMyProfile(data))
     }, [])

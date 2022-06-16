@@ -6,7 +6,7 @@ import { AiFillDelete } from 'react-icons/ai';
 const Users = () => {
     const [users, setUsers] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/user/')
+        fetch('https://lit-retreat-00129.herokuapp.com/user/')
             .then(res => res.json())
             .then(data => setUsers(data))
     }, []);
