@@ -35,7 +35,7 @@ const SignUp = () => {
     if (error || gerror) {
         errorElement = <p className='text-danger'>{error?.message}</p>
     };
-    if (guser || user1) {
+    if (token) {
         navigate('/');
     }
 

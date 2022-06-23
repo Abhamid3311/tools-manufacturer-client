@@ -26,10 +26,10 @@ const Login = () => {
     let from = location.state?.from?.pathname || "/";
 
     useEffect(() => {
-        if (user || user1) {
+        if (token) {
             navigate(from, { replace: true });
         };
-    }, [user, user1, from, navigate]);
+    }, [token, from, navigate]);
 
     if (loading || loading1) {
         return <button className="btn btn-square loading"></button>;
@@ -52,6 +52,7 @@ const Login = () => {
         const password = e.target.password.value;
         signInWithEmailAndPassword(email, password);
         if (!user) {
+
             toast.error('Email or Password is incorrect!!');
             return;
         } else {

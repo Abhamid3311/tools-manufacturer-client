@@ -23,6 +23,7 @@ import Contact from './Pages/Page/Contact/Contact';
 import AddTool from './Pages/Page/Dashboard/AddTool';
 import ManageTools from './Pages/Page/Dashboard/ManageTools';
 import Users from './Pages/Page/Dashboard/Users';
+import RequireAdmin from './Pages/SharedPage/RequireAdmin';
 
 function App() {
   return (
@@ -52,10 +53,12 @@ function App() {
           <Route index path='/dashboard' element={<MyOrder></MyOrder>}></Route>
           <Route path='/dashboard/addReview' element={<AddReview></AddReview>}></Route>
           <Route path='/dashboard/myProfile' element={<MyProfile></MyProfile>}></Route>
-          <Route path='/dashboard/manageOrder' element={<ManageAllOrder></ManageAllOrder>}></Route>
-          <Route path='/dashboard/addTool' element={<AddTool></AddTool>}></Route>
-          <Route path='/dashboard/manageTool' element={<ManageTools></ManageTools>}></Route>
-          <Route path='/dashboard/manageUser' element={<Users></Users>}></Route>
+
+          <Route path='/dashboard/manageOrder' element={<RequireAdmin><ManageAllOrder></ManageAllOrder></RequireAdmin>}></Route>
+
+          <Route path='/dashboard/addTool' element={<RequireAdmin><AddTool></AddTool></RequireAdmin>}></Route>
+          <Route path='/dashboard/manageTool' element={<RequireAdmin><ManageTools></ManageTools></RequireAdmin>}></Route>
+          <Route path='/dashboard/manageUser' element={<RequireAdmin><Users></Users></RequireAdmin>}></Route>
         </Route>
 
         <Route path='*' element={<NotFound></NotFound>}></Route>
