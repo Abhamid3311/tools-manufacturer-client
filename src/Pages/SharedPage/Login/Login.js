@@ -5,6 +5,7 @@ import { async } from '@firebase/util';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import auth from '../../../firebase.init';
+import useToken from '../../../hooks/useToken';
 
 
 const Login = () => {
@@ -17,6 +18,7 @@ const Login = () => {
         error1,
     ] = useSignInWithEmailAndPassword(auth);
     const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
+    const [token] = useToken(user || user1)
 
 
     const navigate = useNavigate();

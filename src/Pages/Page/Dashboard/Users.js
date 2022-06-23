@@ -1,20 +1,28 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
-import { AiFillDelete } from 'react-icons/ai';
+import { useQuery } from 'react-query';
+
+import UserRow from './UserRow';
 
 const Users = () => {
-    const [users, setUsers] = useState([]);
-    useEffect(() => {
-        fetch('https://lit-retreat-00129.herokuapp.com/user/', {
-            method: 'GET',
-            headers: {
-                'authorization': `Bearer ${localStorage.getItem('accessToken')}`
-            }
-        })
-            .then(res => res.json())
-            .then(data => setUsers(data))
-    }, []);
+
+    //Used React Query For Load All Users
+    const { data: users, isLoading, refetch } = useQuery('users', () => fetch('http://localhost:5000/user/', {
+        method: 'GET',
+        headers: {
+            'authorization': `Bearer ${localStorage.getItem('accessToken')}`
+        }
+    }).then(res => res.json()));
+
+
+    if (isLoading) {
+        return <p>Loading....</p>
+    }
+
+
+
+
     return (
         <div>
             <h2 className='text-4xl text-semibold text-accent mb-9'>Users: {users.length}</h2>
@@ -29,25 +37,15 @@ const Users = () => {
                         <th>Delete</th>
                     </tr>
                 </thead>
-
-
-                {
-                    users.map(user => <tbody>
-                        <tr>
-                            <th>{user.userName}</th>
-                            <th>{user.userEmail}</th>
-                            <th>{user.phone}</th>
-
-                            <th><button className='btn btn-accent btn-sm'>Admin</button></th>
-
-                            <th><button className='btn btn-ghost text-2xl text-red-500'>
-                                <AiFillDelete></AiFillDelete>
-                            </button></th>
-                        </tr>
-                    </tbody>)
-
-
-                }
+                <tbody>
+                    {
+                        users.map(user => <UserRow
+                            key={user._id}
+                            user={user}
+                            refetch={refetch}
+                        ></UserRow>)
+                    }
+                </tbody>
             </table>
             <div class="overflow-x-auto">
 

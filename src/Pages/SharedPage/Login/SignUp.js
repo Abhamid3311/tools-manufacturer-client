@@ -6,6 +6,7 @@ import { toast, ToastContainer } from 'react-toastify';
 
 import 'react-toastify/dist/ReactToastify.css';
 import auth from '../../../firebase.init';
+import useToken from '../../../hooks/useToken';
 
 
 
@@ -23,6 +24,7 @@ const SignUp = () => {
         auth);
 
     const [updateProfile, updating, UpdateError] = useUpdateProfile(auth);
+    const [token] = useToken(guser || user1)
 
 
 
@@ -52,7 +54,7 @@ const SignUp = () => {
             await createUserWithEmailAndPassword(email, password);
             await updateProfile({ displayName: name });
             await sendEmailVerification();
-            toast.success('Sent email');
+            toast.success('Sent verification email');
         }
     };
 
