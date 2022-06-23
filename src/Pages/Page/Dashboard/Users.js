@@ -6,7 +6,12 @@ import { AiFillDelete } from 'react-icons/ai';
 const Users = () => {
     const [users, setUsers] = useState([]);
     useEffect(() => {
-        fetch('https://lit-retreat-00129.herokuapp.com/user/')
+        fetch('https://lit-retreat-00129.herokuapp.com/user/', {
+            method: 'GET',
+            headers: {
+                'authorization': `Bearer ${localStorage.getItem('accessToken')}`
+            }
+        })
             .then(res => res.json())
             .then(data => setUsers(data))
     }, []);
@@ -20,6 +25,7 @@ const Users = () => {
                         <th>User</th>
                         <th>Email</th>
                         <th>Phone</th>
+                        <th>Make Admin</th>
                         <th>Delete</th>
                     </tr>
                 </thead>
@@ -31,6 +37,8 @@ const Users = () => {
                             <th>{user.userName}</th>
                             <th>{user.userEmail}</th>
                             <th>{user.phone}</th>
+
+                            <th><button className='btn btn-accent btn-sm'>Admin</button></th>
 
                             <th><button className='btn btn-ghost text-2xl text-red-500'>
                                 <AiFillDelete></AiFillDelete>
