@@ -51,8 +51,7 @@ const Login = () => {
         e.preventDefault();
         const password = e.target.password.value;
         signInWithEmailAndPassword(email, password);
-        if (!user) {
-
+        if (!token) {
             toast.error('Email or Password is incorrect!!');
             return;
         } else {
