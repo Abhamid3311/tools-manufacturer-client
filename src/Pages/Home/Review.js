@@ -3,10 +3,10 @@ import React from 'react';
 const Review = ({ review }) => {
     const { name, comment, img, occupation, ratings } = review;
     return (
-        <div className='card w-90 bg-base-100 p-6 shadow-xl hover:drop-shadow-2xl'>
+        <div className='card w-1/2 bg-base-100 text-left p-6 hover:shadow-2xl'>
             <div>
                 <p>"{comment}"</p>
-                <div className="text-orange-600">
+                <div className="text-orange-600 mt-3">
                     Ratings:  {ratings} star
                 </div>
                 <div className='flex items-center mt-5'>

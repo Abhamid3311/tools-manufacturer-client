@@ -1,23 +1,51 @@
 [
     {
         "name": "Michel Smith",
-        "comment": "One of My favourit Institution.They are doing  awesome work. I love There services. Carry One!",
+        "comment": "I just wanted to share a quick note and let you know that you guys do a really good job. I'm glad I decided to work with you. It's really great how easy your websites are to update and manage.",
         "img": "https://i.pinimg.com/originals/a1/2f/fd/a12ffdab3b3318bee3e7caa0dc95341f.jpg",
         "occupation": "Artist",
         "ratings": 5
     },
     {
         "name": "Taylor Swift",
-        "comment": "One of My favourit Party.They are doing  awesome work. I love There services. keep it up!",
+        "comment": "Khulna Tools is the best copywriter I've ever met, hands down. One of the things that makes her so freakin' good is her unique ability to combine finely-tuned intuition from years of experience with solid research. keep it up!",
         "img": "https://121clicks.com/wp-content/uploads/2020/04/liliia_beda_fine_art_photography_10.jpg",
         "occupation": "Model",
         "ratings": 4.9
     },
     {
         "name": "Bob Rock",
-        "comment": "One of My favourit Institution.They are doing  awesome work. I love There services. Love it!",
+        "comment": "Khulna tools trainings are incredible. Her techniques are genius in their simplicity. Her over-the-shoulder tutorials make absorbing the material both easy and fun. Even if you're not a copywriter, you'll be able to write with confidence and know it's damn good.. Love it!",
         "img": "https://thumbs.dreamstime.com/b/smiling-male-worker-headset-posing-picture-call-center-agent-wearing-looking-camera-near-laptop-workplace-happy-personal-120429091.jpg",
         "occupation": "Business Man",
         "ratings": 4.5
+    },
+    {
+        "name": "Brian Dean",
+        "comment": "Because it's so critical, I cannot impress this upon you enough: learn to write emails from Joanna. Do what she says. You'll 10x your confidence. And as for business results? The sky's the limit.",
+        "img": "https://121clicks.com/wp-content/uploads/2020/04/liliia_beda_fine_art_photography_10.jpg",
+        "occupation": "Founder, Backlinko",
+        "ratings": 4.9
+    },
+    {
+        "name": "Michael Aagaard",
+        "comment": "Khulna Tools is the best copywriter I've ever met, hands down. One of the things that makes her so freakin' good is her unique ability to combine finely-tuned intuition from years of experience with solid research. keep it up!",
+        "img": "https://i1.wp.com/copyhackers.com/wp-content/uploads/2020/05/brian-dean.jpg?fit=900%2C900&ssl=1",
+        "occupation": "CRO Expert (formerly @ Unbounce)",
+        "ratings": 5
+    },
+    {
+        "name": "Marie Forleo",
+        "comment": "Khulna Tools is the best copywriter I've ever met, hands down. One of the things that makes her so freakin' good is her unique ability to combine finely-tuned intuition from years of experience with solid research. keep it up!",
+        "img": "https://i0.wp.com/copyhackers.com/wp-content/uploads/2020/05/marie-forleo.jpg?fit=286%2C286&ssl=1",
+        "occupation": "Author and Founder of MarieTV",
+        "ratings": 4.9
+    },
+    {
+        "name": "Tara Robertson",
+        "comment": "I have no doubt that my team is stronger both in their jobs, as well as careers thanks to Joanna's training. keep it up!",
+        "img": "https://i1.wp.com/copyhackers.com/wp-content/uploads/2020/05/markether-tara-robertson-sprout-social.jpeg?fit=400%2C400&ssl=1",
+        "occupation": "Head of Customer Marketing, Sprout Social",
+        "ratings": 4.9
     }
 ]
