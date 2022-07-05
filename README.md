@@ -1,88 +1,41 @@
-# Getting Started with Create React App
+# Getting Started with Khulna Tools
 
-This project was Made By Tailwind with [Khulna Tools](https://tools-managment.web.app/).
+This project was Made By React  [Khulna Tools](https://tools-managment.web.app/).
 
 [Server Side](https://lit-retreat-00129.herokuapp.com/)
 
 ## Available Features
 
-* Here we can see Details about Tools by Clicking Purchase Button.
-* When we go  at ToolsDetails page we can add order by giving quantity and other information.
-* There is a Section of Business Summery where you Know us by Number.
-* From Dashboard>add review> you can add review.
-* You can also see your all order at the My Order page.
-* At the My Portfolio page you can see about Myself.
+* Khulna Tools is a Fullstack Manufecturer Website.
+* Full responsive site.
+* At Featured Tools section, If you click Buy Now button it will take you to Tools Details page.
+* When we go The ToolsDetails page we can add order by giving quantity and
+  other informations.
+* There is a Section of Business Summery where you can see some state of our
+  Company.
+* There is a Sliding Testimonial section in homepage.
+* At Tools page you can see all of our Tools.
+* There are also have Contact page and About Us page.
+* Implement Email and Google Authentication for login and register.
+* Implement JWT Token  for admin and users aurhorization.
+* Dashboard made by Nested route. 
+* Dashboard for Users: My Order, Add review, My profile page.
+* Dashboard for Admin : Manage order, Manage users(only admin can make admin), Add Tools, My profile page.
+
 
 ## Used Technology
-* HTML
+* HTML5
+* CSS3
 * Tailwind
+* Daisy UI
 * React
-* Node(Express.js)
+* React Router
+* Node (Express.js)
 * MongoDB
 * Firebase Authentication
 * Firebase Hosting
 * React Toastify
-* React Router
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* Swiper js
+* React Icon
+* JWT Tokens
+* 
