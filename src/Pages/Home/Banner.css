@@ -4,3 +4,10 @@
     background-position: center;
     background-attachment: fixed;
 }
+
+.featured-container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../imges/range.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
