@@ -18,9 +18,6 @@ const Reviews = () => {
         <div id='review' className='my-12'>
             <h2 className='text-accent text-4xl text-center font-bold my-12'>Testimonial</h2>
 
-
-
-
             <Swiper
                 spaceBetween={30}
                 centeredSlides={true}

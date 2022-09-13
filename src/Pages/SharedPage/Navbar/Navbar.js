@@ -14,12 +14,12 @@ const Navbar = () => {
     const menuItems = <>
         <li><Link to={'/'}>Home</Link></li>
         <li><Link to={'/alltools'}>Tools</Link></li>
-
         {user && <li><Link to={'/dashboard'}>Dashboard</Link></li>}
         <li><Link to={'/about'}>About Us</Link></li>
         <li><Link to={'/contact'}>Contact Us</Link></li>
         <li> {user ? <button onClick={logOut}>Sign Out</button> : <Link to={'/login'} >Login</Link>}</li>
     </>
+
     return (
         <div className="navbar bg-accent text-white sticky top-0 z-10">
             <div className="navbar-start">

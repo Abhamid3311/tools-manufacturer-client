@@ -14,7 +14,7 @@ const Tool = ({ tool, handleBuyNow }) => {
                     <p> <strong className='text-secondary'>Minimum Order : {minOrder}</strong> </p>
                     <p>Available : {quantity}</p>
                     <h4 className='text-red-600'>Price: {price} per/pec</h4>
-                    <p className="card-title text-gray-400">{description}</p>
+
                     <div className="card-actions justify-end">
                         <button onClick={() => handleBuyNow(_id)} className="btn btn-accent text-white w-full text-lg">
                             <span className='mr-1'>Buy Now</span> <AiOutlineArrowRight></AiOutlineArrowRight>
